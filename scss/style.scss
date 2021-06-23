@@ -1,0 +1,11 @@
+@import "./reset";
+@import "./batman_app";
+
+@font-face {
+  font-family: "Batman";
+  src: url("../font/Batman_Forever_Alternate_Cyr.woff") format("woff");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

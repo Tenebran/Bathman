@@ -1,0 +1,93 @@
+.wrapper {
+  height: 937px;
+  background: url(../img/image/background.jpg) no-repeat center / cover;
+}
+
+.detonator {
+  font-family: "Batman";
+  color: yellow;
+  text-align: center;
+  font-size: 28px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  &__controll {
+    margin: 0 0 20px 0;
+    display: block;
+    font-size: 20px;
+    padding: 0 0 10px 0;
+
+    &__img {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background: url(../img/icon/arrows.png) no-repeat center / cover;
+      margin-bottom: -30px;
+    }
+  }
+  &__text {
+    text-shadow: 5px 5px 5px rgb(143, 143, 143);
+  }
+  &__icon1 {
+    height: 200px;
+    width: 200px;
+    background: url(../img/icon/batman_PNG34.png) no-repeat center/ contain;
+  }
+}
+.batman {
+  margin: 350px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(../img/image/background.jpg) no-repeat center / cover;
+
+  &:hover {
+    .batman__app {
+      transform: rotateY(360deg);
+    }
+    .batman__background {
+      transform: rotateY(180deg);
+    }
+  }
+  &__app {
+    position: absolute;
+    height: 715px;
+    width: 1130px;
+    border: 10px solid black;
+    background: url(../img/image/app__background.png) no-repeat center / cover;
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+    &__person {
+      position: fixed;
+      border: 5px solid rgb(90, 0, 0);
+      height: 100px;
+      width: 100px;
+      transition: 0.1s;
+      background: url(../img/icon/detonator.png) no-repeat center / contain;
+      transition: 0.1s;
+
+      &:focus {
+        border: 5px solid rgba(255, 196, 0, 0.884);
+        background: url(../img/icon/bat__pers.png) no-repeat center / contain;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    height: 715px;
+    width: 1130px;
+    border: 10px solid black;
+    background: url(../img/image/background.jpg) no-repeat center / contain;
+    backface-visibility: hidden;
+    transition: 2s;
+  }
+}
